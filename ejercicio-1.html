@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio 1</title>
+</head>
+<body>
+<!-- 
+Ejercicio 1
+    Crear una lista desordenada con 10 elementos dentro usando un bucle for. Tener en cuenta que
+    solo se le puede hacer un único appendChild al ul creado, asi minimizamos el tiempo de
+    modificaciones en el DOM.
+-->
+
+<!-- scripts -->
+<h1>Ej 1</h1>
+<div id="ej1"></div>
+<script>
+    const ej1 = document.getElementById('ej1')
+    let ul = document.createElement('ul')
+    let fragmento = document.createDocumentFragment()
+    
+    for(let i = 0; i < 10 ; i++){
+    let li = document.createElement('li')
+    li.innerText = 'item' + i + '<br>'
+    fragmento.appendChild(li)
+    }
+    ul.appendChild(fragmento)
+
+    ej1.innerHTML = ul.textContent;
+
+</script>
+</body>
+</html>

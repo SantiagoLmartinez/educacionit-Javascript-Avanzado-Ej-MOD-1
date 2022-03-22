@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio 2</title>
+</head>
+<body>
+<!-- 
+Ejercicio 2
+    Hacer que el <article> con id "movil" solamente se vea si la página se carga a menos de 500px.
+-->
+<style>
+    #movil{
+        background-color: blue;
+        color: #fff;
+        width: 500px;
+        margin: 0 auto;
+        height: 500px;
+        text-align: center;
+        font-size: 7em;
+    }
+    @media (min-width: 500px) { 
+        #movil{display: none;}
+     }
+
+</style>
+<h1>ejercicio 2</h1>
+<p>Achicar a 500px el tamaño del navegador</p>
+<article id="movil"> esto se ve a menos de 500px</article>
+
+</body>
+</html>

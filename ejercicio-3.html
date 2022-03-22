@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio 3</title>
+</head>
+<body>
+<!--
+Ejercicio 3
+Realizar la misma operación que en el punto uno, pero ahora para el <ul> que ya se encuentra
+en el <body>. Recordar que no se puede hacer múltiples appendChild a un nodo
+-->
+
+<!-- scripts -->
+<ul id="ul">
+    <strong>Estatico</strong>
+</ul>
+<script>
+    ul = document.getElementById('ul')
+
+    let fragmento = document.createDocumentFragment()
+    
+    for(let i = 0; i < 10 ; i++){
+    let li = document.createElement('li')
+    li.innerText = 'item' + i 
+    fragmento.appendChild(li)
+    }
+    ul.appendChild(fragmento)
+</script>
+</body>
+</html>

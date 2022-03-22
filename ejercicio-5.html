@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 5</title>
+</head>
+<body>
+<!-- 
+Ejercicio 5
+Cambiarle el color del fondo al <header> por alguna tonalidad de azul oscuro y al <h1> por
+alguna tonalidad de blanco para que contraste.
+-->
+<style>
+    *{margin: 0; padding: 0;}
+    header{
+        background-color: yellow;
+        height: 50px;
+        font-size: 1em;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    h1{
+        color: black;
+    }
+    .center{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+    #btn{
+        padding: 10px;
+        border-radius: 10px;
+    }
+</style>
+<header>
+    <h1>ENCABEZADO</h1>
+</header>
+<div class="center">
+    <button id="btn">CAMBIAR COLOR</button>
+</div>
+
+<!-- scripts -->
+<script>
+    document.getElementById('btn').addEventListener('click', () =>{
+        document.querySelector('header').style.backgroundColor = 'blue'
+        document.querySelector('h1').style.color = 'white'
+
+    })
+</script>
+</body>
+</html>
